@@ -21,7 +21,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@layout": ["./src/layout/index.ts"],
-      "@components": ["./src/components/index.ts"]
+      "@components": ["./src/components/index.ts"],
+      "@components/shadcn": ["./src/components/ui/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.mts"],

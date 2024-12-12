@@ -20,7 +20,7 @@ export const ViewSD = ({
 }>) => {
   return (
     <Canvas shadows camera={{ fov: 100, position: [0, 0, 5] }}>
-      <Stats />
+      {/* <Stats /> */}
       <ambientLight intensity={1} />
       <pointLight
         intensity={10000}
