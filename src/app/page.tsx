@@ -16,7 +16,7 @@ export default function Home() {
         <section className="w-screen h-screen relative">
           <section className="w-full h-full absolute flex flex-col gap-8 row-start-2 p-10 md:justify-center">
             <section className="w-full h-full flex flex-col justify-center gap-2">
-              <h1 className="text-cyan-50 font-roboto font-extrabold text-6xl sm:w-1/2 md:w-1/3">
+              <h1 className="text-cyan-50 font-roboto scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl sm:w-1/2 md:w-1/3">
                 Unlock the Secrets of the Universe with Physics!
               </h1>
               <Button className="sm:w-1/3 md:w-1/4 hover:scale-110 inset-full z-50 bg-amber-400 transition-transform hover:transition-transform">

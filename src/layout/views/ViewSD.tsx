@@ -8,7 +8,7 @@ import {
   PerspectiveCamera,
   Preload,
   Stars,
-  Stats,
+  // Stats,
 } from "@react-three/drei";
 import { EffectComposer, Noise, SMAA } from "@react-three/postprocessing";
 
@@ -20,7 +20,7 @@ export const ViewSD = ({
 }>) => {
   return (
     <Canvas shadows dpr={[1.5, 2]} linear>
-      <Stats />
+      {/* <Stats /> */}
       <Stars radius={500} depth={50} count={1000} factor={10} />
       <fog attach="fog" args={["#272730", 16, 30]} />
       <ambientLight intensity={0.75} />
