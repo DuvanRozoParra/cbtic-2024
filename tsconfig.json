@@ -21,10 +21,15 @@
     "paths": {
       "@/*": ["./src/*"],
       "@layout": ["./src/layout/index.ts"],
-      "@components": ["./src/components/index.ts"],
-      "@components/shadcn": ["./src/components/ui/index.ts"]
+      "@components/*": ["./src/components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.mts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "next.config.mts"
+  ],
   "exclude": ["node_modules"]
 }
