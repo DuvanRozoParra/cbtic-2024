@@ -16,6 +16,7 @@ export const Navbar = () => {
         <NavigationMenuList>
           <StandarButton path="Home" />
           <Asignature />
+          <StandarButton path="Teacher" />
           <StandarButton path="About" />
           {/* <AboutUs /> */}
         </NavigationMenuList>
