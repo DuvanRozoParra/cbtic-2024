@@ -20,8 +20,11 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "utils": ["./src/lib/index.ts"],
       "@layout": ["./src/layout/index.ts"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@store": ["./src/store/index.ts"],
+      "config": ["./src/config.ts"]
     }
   },
   "include": [
