@@ -6,7 +6,10 @@ import {
 } from "@components/ui/navigation-menu";
 import Link from "next/link";
 
-export const StandarButton = ({ path }: Readonly<{ path: string }>) => {
+export const StandarButton = ({
+  path,
+  name,
+}: Readonly<{ path: string; name: string }>) => {
   return (
     <NavigationMenuItem>
       <Link
@@ -15,7 +18,7 @@ export const StandarButton = ({ path }: Readonly<{ path: string }>) => {
         passHref
       >
         <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-transparent "}>
-          {path}
+          {name}
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>
