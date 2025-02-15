@@ -10,9 +10,7 @@ import { Button } from "@components/ui/button";
 export const AboutUs = () => {
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-white">
-        About us
-      </NavigationMenuTrigger>
+      <NavigationMenuTrigger className="bg-transparent">About us</NavigationMenuTrigger>
       <NavigationMenuContent className="md:w-[450px]">
         <section className="flex flex-row">
           <section className="w-1/2 relative">
@@ -22,12 +20,7 @@ export const AboutUs = () => {
               </h2>
               <p>Latin america can also!!!</p>
             </section>
-            <Image
-              src="/navbar/wllp.jpg"
-              alt="about us"
-              width={300}
-              height={450}
-            />
+            <Image src="/navbar/wllp.jpg" alt="about us" width={300} height={450} />
           </section>
           <section className="w-1/2 flex flex-col p-2 gap-2">
             <Button className="group text-black hover:text-white bg-transparent p-2 h-1/3 flex flex-col items-start">
