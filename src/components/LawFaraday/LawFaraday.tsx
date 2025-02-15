@@ -2,7 +2,7 @@
 
 import { Iman, Aspire, FieldAspire } from "@/models/LawFaraday";
 import { g } from "utils";
-import React, { useRef } from "react";
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, useGLTF } from "@react-three/drei";
 import { Bloom, DepthOfField, EffectComposer } from "@react-three/postprocessing";
@@ -11,7 +11,6 @@ import { useMove } from "@/store";
 import { PATH_LAW_FARADAY } from "config";
 
 export const LawFaradayPage = () => {
-  const refSlider = useRef<number>(0);
 
   return (
     <>
