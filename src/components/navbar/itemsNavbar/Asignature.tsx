@@ -9,7 +9,9 @@ import Link from "next/link";
 export const Asignature = () => {
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent">Asignature</NavigationMenuTrigger>
+      <NavigationMenuTrigger className="bg-transparent">
+        Asignaturas
+      </NavigationMenuTrigger>
       <NavigationMenuContent className="md:w-[200px]">
         <ul className="flex flex-col">
           <li>
@@ -18,10 +20,10 @@ export const Asignature = () => {
               className="group text-black hover:text-white hover:bg-black bg-transparent p-2 flex flex-col items-start"
             >
               <h2 className="mt-10 scroll-m-20 border-b pb-2 text-lg font-semibold tracking-tight transition-colors first:mt-0">
-                Law Faraday
+                Ley de Faraday
               </h2>
               <p className="text-wrap text-start text-zinc-600 group-hover:text-white">
-                Interaction of law Faraday
+                Interaccion de la ley de faraday
               </p>
             </Link>
           </li>
@@ -31,10 +33,10 @@ export const Asignature = () => {
               className="group text-black hover:text-white hover:bg-black bg-transparent p-2 flex flex-col items-start"
             >
               <h2 className="mt-10 scroll-m-20 border-b pb-2 text-lg font-semibold tracking-tight transition-colors first:mt-0">
-                Pendulum
+                Pendulo
               </h2>
               <p className="text-wrap text-start text-zinc-600 group-hover:text-white">
-                Interaction of Pendulum
+                Interaccion del pendulum
               </p>
             </Link>
           </li>

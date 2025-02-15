@@ -14,10 +14,10 @@ export const Navbar = () => {
     >
       <NavigationMenu>
         <NavigationMenuList>
-          <StandarButton path="Home" />
+          <StandarButton path="Home" name="Home" />
           <Asignature />
-          <StandarButton path="Teacher" />
-          <StandarButton path="About" />
+          <StandarButton path="Teacher" name="Profesores" />
+          <StandarButton path="about" name="Acerca de Nostros" />
           {/* <AboutUs /> */}
         </NavigationMenuList>
       </NavigationMenu>
