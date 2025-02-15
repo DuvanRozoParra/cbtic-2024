@@ -34,7 +34,7 @@ export function Model(props: JSX.IntrinsicElements["group"]) {
     PATH_LAW_FARADAY + "/iman-transformed.glb",
   ) as GLTFResult;
 
-  useFrame((state, delta, xrFrame) => {
+  useFrame(() => {
     // This function runs at the native refresh rate inside of a shared render-loop
     if (useMove.getState().moveX) {
       // 0.1 es el factor de interpolación

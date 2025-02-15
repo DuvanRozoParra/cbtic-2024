@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const ArrayEquipo = [
   {
     name: "MARÍA ALEJANDRA CRUZ DOMÍNGUEZ",
-    image: "/images/Profesores/María Alejandra Cruz Domínguez.jpg",
+    image: "/images/Profesores/Maria_Alejandra_Cruz_Dominguez.jpg", 
     estudios: [
       "Magíster en Gestión Ambiental y Energética de las Organizaciones - UNIR",
       "Magíster (c) en Tecnología Educativa y Competencias Digitales - UNIR",
@@ -14,19 +14,19 @@ const ArrayEquipo = [
   },
   {
     name: "ELIANA MARÍTZA TULCÁN MEJÍA",
-    image: "/images/Profesores/Eliana Marítza Tulcán Mejía.png",
+    image: "/images/Profesores/Eliana_Maritza_Tulcan_Mejia.png",
     estudios: ["Química de Alimentos - UPTC", "Magíster en Química - UPTC"],
     work: "Docente",
   },
   {
     name: "JOHAN RICARDO MORALES ORTÍZ",
-    image: "/images/Profesores/Johan Ricardo Morales Ortíz.jpg",
+    image: "/images/Profesores/Johan_Ricardo_Morales_Ortiz.jpg",
     estudios: ["Ingeniero Agroindustrial - Unillanos"],
     work: "Jefe de Laboratorios",
   },
   {
     name: "HAZLITT ENERIETH NIÑO MENDIVELSO",
-    image: "/images/Profesores/Hazlitt Enerieth Niño Mendivelso.jpg",
+    image: "/images/Profesores/Hazlitt_Enerieth_Nino_Mendivelso.jpg",
     estudios: [
       "físico - UPTC",
       "magíster en didáctica de la física y la química en educación secundaria y bachillerato - UNIR",
@@ -35,7 +35,7 @@ const ArrayEquipo = [
   },
   {
     name: "MARIBEL DUQUE LÓPEZ",
-    image: "/images/Profesores/Maribel Duque López.jpg",
+    image: "/images/Profesores/Maribel_Duque_Lopez.jpg",
     estudios: [
       "Matemático - Universidad Central",
       "Magíster en Educación - Corporación Universitaria Minuto de Dios",
@@ -45,7 +45,7 @@ const ArrayEquipo = [
   },
   {
     name: "JAVIER GUILLERMO BERNAL AGUILAR",
-    image: "/images/Profesores/Javier Guillermo Bernal Aguilar.jpg",
+    image: "/images/Profesores/Javier_Guillermo_Bernal_Aguilar.jpg",
     estudios: [
       "Ingeniero Químico - Universidad de América",
       "Magíster en Ingeniería Avanzada de Producción Logística y Cadena de Suministro - Universidad Politécnica de Valencia",
@@ -54,7 +54,7 @@ const ArrayEquipo = [
   },
   {
     name: "DIEGO ANDRÉS PALTA PRADO",
-    image: "/images/Profesores/Diego Andrés Palta Prado.jpg",
+    image: "/images/Profesores/Diego_Andres_Palta_Prado.jpg",
     estudios: [
       "Ingeniero Físico - Universidad del Cauca",
       "Magíster (c) en Biotecnología - Universidad del Cauca ",
@@ -63,7 +63,7 @@ const ArrayEquipo = [
   },
   {
     name: "DAVID FELIPE CASTAÑEDA ANGARITA",
-    image: "/images/Profesores/David Felipe Castañeda Angarita.png",
+    image: "/images/Profesores/David_Felipe_Castaneda_Angarita.png",
     estudios: [
       "Licenciado en Matemáticas y Física",
       "Universidad de los Llanos",
@@ -73,7 +73,7 @@ const ArrayEquipo = [
   },
   {
     name: "SANTIAGO ALEJANDRO ZÚÑIGA MELO",
-    image: "/images/Profesores/Santiago Alejandro Zúñiga Melo.jpg",
+    image: "/images/Profesores/Santiago_Alejandro_Zuniga_Melo.jpg",
     estudios: [
       "Ingeniero Físico - Universidad del Cauca",
       "Magíster(c) en Ciencia de Datos",
@@ -82,7 +82,7 @@ const ArrayEquipo = [
   },
   {
     name: "FIDEL BAUTISTA RODRIGUEZ PUERTAS",
-    image: "/images/fidel.png",
+    image: "/images/Profesores/Fidel_Bautista_Rodríguez_Puertas.jpg",
     estudios: [
       "Físico - Universidad de la Habana Cuba",
       "Magíster en Física - Universidad de la Habana Cuba",
@@ -92,13 +92,13 @@ const ArrayEquipo = [
   },
   {
     name: "ESNEIDER LEANDRO GARAVITO PÉREZ",
-    image: "/images/Profesores/Esneider Leandro Garavito Pérez.jpg",
+    image: "/images/Profesores/Esneider_Leandro_Garavito_Perez.jpg",
     estudios: ["Físico - UPTC"],
     work: "Docente",
   },
   {
     name: "Alejandro Calderón Vásquez",
-    image: "/images/Profesores/Alejandro Calderón Vásquez.jpg",
+    image: "/images/Profesores/Alejandro_Calderon_Vasquez.jpg",
     estudios: [
       "Licenciado en Matemáticas y Física - Universidad de los Llanos",
       "Especialización en Proyectos de Desarrollo - Escuela Superior de Administración Pública (ESAP)",
@@ -107,7 +107,7 @@ const ArrayEquipo = [
   },
   {
     name: "Jesús Alejando González Rojas",
-    image: "/images/Profesores/Jesús Alejando González Rojas.jpg",
+    image: "/images/Profesores/Jesus_Alejando_Gonzalez_Rojas.jpg",
     estudios: [
       "Biólogo - Universidad de los Llanos",
       "Magíster (c) en Gestión de Cuencas Hidrográficas - Universidad Santo Tomás",

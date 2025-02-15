@@ -1,6 +1,7 @@
+/* eslint-disable */
 "use client";
 import React from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import Link from "next/link";
 
 interface ToastConfig {

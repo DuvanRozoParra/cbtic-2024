@@ -33,7 +33,7 @@ export function Model(props: JSX.IntrinsicElements["group"]) {
   useFrame(() => {
     // This function runs at the native refresh rate inside of a shared render-loop
     const x = useMove.getState().moveX; // Obtiene el valor de x
-    const state = useMove.getState();
+    // const state = useMove.getState();
 
     if (x > tempX.current) {
       // refFieldAspire.current.rotation.x = g(180);
