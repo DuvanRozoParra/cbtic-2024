@@ -17,11 +17,11 @@ export default function Home() {
         <section className="absolute w-full h-full flex flex-col gap-8 p-10 md:justify-center">
           <section className="w-full h-3/4 flex flex-col justify-between items-center gap-2">
             <h1 className="text-cyan-50 font-roboto scroll-m-20 text-4xl font-extrabold tracking-tight text-center lg:text-8xl sm:w-1/2 md:w-1/2 md:max-w-[800px]">
-              Unlock the Secrets of the Universe with Physics!
+              Descubre los secretos del universo con la fisica!
             </h1>
             <Button className="sm:w-60 md:w-60 h-12 hover:scale-110 inset-full z-50 bg-amber-400 transition-transform hover:transition-transform">
               <p className="font-roboto text-gray-900 font-semibold text-lg hover:text-cyan-50">
-                Get Started!
+                comienza ahora!
               </p>
             </Button>
           </section>
