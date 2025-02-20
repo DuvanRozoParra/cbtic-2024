@@ -1,0 +1,1 @@
+export { CarrouselImages } from "@/components/carrouselImage/Carrousel"
