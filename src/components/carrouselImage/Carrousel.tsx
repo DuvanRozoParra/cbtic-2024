@@ -17,13 +17,13 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
     const offset = (index - currentIndex + images.length) % images.length;
 
     if (offset === 0) {
-      return "translate-y-0 scale-100 opacity-100 z-10";
+      return " translate-y-0 scale-100 opacity-100 z-10 ";
     }
     if (offset === 1) {
-      return "translate-y-[15%] scale-75 opacity-100 z-0";
+      return " translate-y-[15%] scale-75 opacity-100 z-0 ";
     }
     if (offset === images.length - 1) {
-      return "translate-y-[-15%] scale-75 opacity-100 z-0";
+      return "translate-y-[-15%] scale-75 opacity-100 z-0 ";
     }
 
     return "translate-y-full opacity-0";
@@ -31,14 +31,13 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
 
   const getImageStyle = (index: number) => {
     const offset = (index - currentIndex + images.length) % images.length;
-
     if (offset === 0) return "";
     return "filter blur-sm";
   };
 
   return (
     <div
-      className="w-full h-full overflow-hidden relative "
+      className="w-full h-full overflow-hidden relative"
       style={{
         perspective: "40px",
       }}
@@ -58,12 +57,12 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
               key={index}
               className={`absolute w-full h-full transition-all duration-500 ease-in-out ${transformClass} ${imageStyle} flex justify-center items-center`}
             >
-              <Card className="w-full h-2/3 border-none">
+              <Card className="w-full h-[50%]  border-none">
                 <CardContent className="p-0 h-full">
                   <img
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain "
                   />
                 </CardContent>
               </Card>
@@ -77,10 +76,10 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
           <div
             key={index}
             onClick={() => goToImage(index)}
-            className={`w-4 h-4 rounded-full cursor-pointer ${
-                index === currentIndex
-                ? "bg-red-500"  
-                : "border-2 border-red-500 bg-transparent hover:bg-red-500"  
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full cursor-pointer ${
+              index === currentIndex
+                ? "bg-[#FC4442]"
+                : "border-2 border-[#FC4442] bg-transparent hover:bg-[#FC4442]"
             } transition-colors duration-300`}
           />
         ))}
