@@ -1,0 +1,1 @@
+export { Model as Howl  } from "@/models/Rau/Howl";

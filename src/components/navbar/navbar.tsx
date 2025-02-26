@@ -8,8 +8,8 @@ export const Navbar = () => {
   const pathname = usePathname();
   return (
     <section
-      className={`w-screen h-14 fixed top-0 z-50 flex items-center justify-center p-5 bg-black/5 backdrop-blur-sm ${
-        pathname !== "/" ? "text-black" : "text-white"
+      className={`w-screen h-14 fixed top-0 z-50 flex items-center justify-center p-5 bg-transparent  ${
+        pathname !== "/" ? "text-white" : "text-white"
       }`}
     >
       <NavigationMenu>

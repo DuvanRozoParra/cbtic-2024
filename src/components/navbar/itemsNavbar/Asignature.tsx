@@ -17,7 +17,7 @@ export const Asignature = () => {
           <li>
             <Link
               href="/asignatures/faraday/info"
-              className="group text-black hover:text-white hover:bg-black bg-transparent p-2 flex flex-col items-start"
+              className="group text-white hover:text-white hover:bg-black bg-transparent p-2 flex flex-col items-start"
             >
               <h2 className="mt-10 scroll-m-20 border-b pb-2 text-lg font-semibold tracking-tight transition-colors first:mt-0">
                 Ley de Faraday

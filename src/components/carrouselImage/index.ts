@@ -1,1 +1,1 @@
-export { CarrouselImages } from "@/components/carrouselImage/Carrousel"
+export { CarrouselImages } from "@/components/carrouselimage/Carrousel"

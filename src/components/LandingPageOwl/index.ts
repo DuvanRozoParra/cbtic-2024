@@ -1,0 +1,1 @@
+export { CanvasModel } from "@/components/LandingPageOwl/CanvasModel/CanvasModel"
