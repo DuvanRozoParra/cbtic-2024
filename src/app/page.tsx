@@ -24,7 +24,7 @@ export default function Home() {
           <CanvasModel />
         </div>
 
-        <div className="w-full h-full z-20 flex flex-col items-center xl:items-start lg:items-start md:items-start sm:items-center justify-center md:order-1 sm:order-2 xl:ml-48 md:ml-44 sm:ml-12 lg:ml-56 px-4 sm:p-8">
+        <div className="w-full h-full z-20 flex flex-col items-center xl:items-start lg:items-start md:items-start sm:items-center justify-center md:order-1 sm:order-2  md:ml-48 sm:ml-12 lg:ml-56 px-4 sm:p-8">
           <div className=" text-center lg:text-start xl:text-start md:text-left sm:text-center font-poppins">
             <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide">
               Descubre los secretos del universo con la física
