@@ -1,49 +1,45 @@
-import { ViewSD } from "@layout";
-import { Metadata } from "next";
-import { View3d } from "@components/landing";
+import { CanvasModel } from "@/components/LandingPageOwl/CanvasModel/CanvasModel";
 import { Button } from "@/components/ui/button";
 import { Atom } from "lucide-react";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Unlock the Secrets of the Universe with Physics!",
+  title: "Landing Page",
 };
 
 export default function Home() {
   return (
-    <section className="flex flex-col gap-8 row-start-2 items-center w-screen h-screen snap-y snap-mandatory backgroundCosmo">
-      {/* Sección 1 */}
-      <section className="h-screen w-full snap-start flex items-center justify-center relative">
-        <section className="absolute w-full h-full flex flex-col gap-8 p-10 md:justify-center">
-          <section className="w-full h-3/4 flex flex-col justify-between items-center gap-2">
-            <h1 className="text-cyan-50 font-roboto scroll-m-20 text-4xl font-extrabold tracking-tight text-center lg:text-8xl sm:w-1/2 md:w-1/2 md:max-w-[800px]">
-              Descubre los secretos del universo con la fisica!
-            </h1>
-            <Button className="sm:w-60 md:w-60 h-12 hover:scale-110 inset-full z-50 bg-amber-400 transition-transform hover:transition-transform">
-              <p className="font-roboto text-gray-900 font-semibold text-lg hover:text-cyan-50">
-                comienza ahora!
-              </p>
-            </Button>
-          </section>
-          <section className="w-full flex flex-row items-end justify-end">
-            <p className="font-roboto font-semibold text-cyan-50 flex flex-row gap-2">
-              <Atom />
-              CBTIC
-            </p>
-          </section>
-        </section>
-        <ViewSD>
-          <View3d />
-        </ViewSD>
-      </section>
+    <section className="w-full min-h-screen md:h-screen flex flex-col items-center justify-center text-white relative bg-[#1B1B2A] overflow-auto">
+      <div className="absolute inset-0 bg-radial-gradient"></div>
 
-      {/* Sección 2 
-      <section className="w-full h-screen flex items-center justify-center relative">
-        <p className="text-cyan-50 font-roboto font-semibold text-xl">
-          Segunda sección de contenido relevante.
+      <div className="w-full sm:w-auto order-first sm:absolute sm:top-8 sm:left-5 lg:top-10 lg:left-20 z-20 px-4 py-4 sm:px-0 sm:py-0">
+        <p className="font-roboto font-semibold text-cyan-50 flex items-center gap-2">
+          <Atom />
+          CBTIC
         </p>
-      </section>
-          */}
+      </div>
+
+      <div className="flex-1 w-full flex flex-col md:flex-row items-center justify-center">
+        <div className="w-full h-full flex justify-center items-center md:order-2 sm:order-1 z-10">
+          <CanvasModel />
+        </div>
+
+        <div className="w-full h-full z-20 flex flex-col items-center xl:items-start lg:items-start md:items-start sm:items-center justify-center md:order-1 sm:order-2 md:ml-48 sm:ml-12 lg:ml-56 px-4 sm:p-8">
+          <div className=" text-center lg:text-start xl:text-start md:text-left sm:text-center font-poppins">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide">
+              Descubre los secretos del universo con la física
+            </h1>
+            <p className="mt-4 text-base sm:text-lg lg:text-xl tracking-wide">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+            </p>
+          </div>
+          <div className="mt-6">
+            <Button className="p-7 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-95 transition-transform duration-300 ease-in-out">
+              <p className="font-poppins text-lg">¡Comienza ahora!</p>
+            </Button>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
