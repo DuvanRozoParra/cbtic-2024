@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
+
 
 type CarrouselProps = {
   images: string[];
@@ -59,7 +61,7 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
             >
               <Card className="w-full h-[50%]  border-none">
                 <CardContent className="p-0 h-full">
-                  <img
+                  <Image
                     src={image}
                     alt={`Slide ${index + 1}`}
                     className="w-full h-full object-contain "

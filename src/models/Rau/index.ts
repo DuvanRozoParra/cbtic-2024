@@ -1,1 +1,1 @@
-export { Model as Howl  } from "@/models/Rau/Howl";
+export { Model as Howl  } from "@/models/Rau/owl";

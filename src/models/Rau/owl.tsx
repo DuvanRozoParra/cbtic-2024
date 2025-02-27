@@ -18,7 +18,7 @@ type GLTFResult = GLTF & {
 type ModelProps = JSX.IntrinsicElements["group"];
 
 export function Model(props: ModelProps) {
-  const [state, setState] = useState({ clock: new THREE.Clock() });
+  const [state] = useState({ clock: new THREE.Clock() });
   const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(PATH_RAU + '/Buho.glb') as GLTFResult;
   const { actions } = useAnimations(animations, group);
