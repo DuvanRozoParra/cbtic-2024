@@ -31,6 +31,7 @@ export default function Home() {
             </h1>
             <p className="mt-4 text-base sm:text-lg lg:text-xl tracking-wide">
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+              "arregle la landing page calchon"
             </p>
           </div>
           <div className="mt-6">
