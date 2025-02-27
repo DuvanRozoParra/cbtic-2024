@@ -158,4 +158,4 @@ export function Model(props: ModelProps) {
   );
 }
 
-useGLTF.preload('/Buho.glb');
+useGLTF.preload('/Models/Rau/Buho.glb');
