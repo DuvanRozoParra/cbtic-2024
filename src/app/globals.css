@@ -21,24 +21,28 @@ body {
   background: 
     radial-gradient(circle at top left, #FC4442, transparent 25%),
     radial-gradient(circle at bottom right, #F0E19E, transparent 25%),
-    url('/images/Esquina1.png') top left/contain no-repeat,
-    url('/images/Esquina2.png') bottom right/contain no-repeat;
+    url('/images/Esquina2.png') top left/contain no-repeat,
+    url('/images/Esquina1.png') bottom right/contain no-repeat;
   
+
   background-position: 
     top left,
     bottom right,
-    top 0 left -15vw,
-    bottom -25vh right 0;
+    top left -7vw,
+    bottom right -7vw;
   
-  position:fixed; 
+  position: fixed; 
   left: 0;
-  width: 100vw; 
-  height: 100vh; 
+  width: 100%; 
+  height: 100%; 
   z-index: 0;
   pointer-events: none;
-  background-attachment: scroll;
+  
+  /* Fija el fondo respecto a la ventana */
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
 
 .font-roboto {
   font-family: var(--font-roboto);

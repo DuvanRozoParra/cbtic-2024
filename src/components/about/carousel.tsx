@@ -70,8 +70,11 @@ const ArrayEquipo = [
 
 export function CarouselAbout() {
   return (
-    <main className="flex flex-col p-8 gap-5 bg-[#f8f8f8]">
-      <div className="w-full h-screen flex justify-center items-center flex-col gap-4 bg-[#f8f8f8]">
+    <main className="z-10 flex flex-col p-8 gap-5 bg-[#1B1B2A]">
+
+      <div className="top-0 left-0 bg-radial-gradient -z-10"></div>
+
+      <div className="w-full flex justify-center items-center flex-col gap-4 z-10 mt-16">
         <div className="w-4/5 h-full relative">
           <Image
             src={"/images/fondo_unimeta.webp"}
@@ -80,13 +83,13 @@ export function CarouselAbout() {
             className="w-full object-cover h-full object-top"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-          <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold">
+          <h1 className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold ">
             Sobre Nosotros
           </h1>
         </div>
         <section
-          className="text-gray-600 body-font flex justify-
-      center items-center flex-col gap-10 w-4/5 h-4/5"
+          className="text-white body-font flex justify-
+      center items-center flex-col gap-10 w-4/5 h-full mt-8"
         >
           <p className="text-justify">
             El Departamento de Ciencias Básicas de la Corporación Universitaria del Meta,
@@ -137,8 +140,8 @@ export function CarouselAbout() {
           </div>
         </section>
       </div>
-      <section className="w-full h-full bg-[#f8f8f8] flex flex-col items-center justify-center relative gap-5">
-        <section className="flex justify-center flex-col items-center w-4/5 gap-4">
+      <section className="w-full h-full flex flex-col items-center justify-center relative gap-5">
+        <section className="flex justify-center flex-col items-center w-4/5 gap-4 text-white">
           <h1 className="text-4xl font-bold">Equipo de trabajo</h1>
           <p className="text-lg text-center">
             Descubre cómo nuestro talentoso equipo de trabajo impulsa el crecimiento del
@@ -166,9 +169,8 @@ export function CarouselAbout() {
                           alt={`Foto-de-perfil-de-${elemento.name}`}
                           className={`object-contain rounded-t-sm  object-center`}
                           style={{
-                            backgroundColor: `${
-                              elemento.color ? `#${elemento.color}` : "#c0bfc4"
-                            }`,
+                            backgroundColor: `${elemento.color ? `#${elemento.color}` : "#c0bfc4"
+                              }`,
                           }}
                           fill
                           sizes="100% 100%"

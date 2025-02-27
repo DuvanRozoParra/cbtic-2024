@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="pt-8">
+    <section>
       <CarouselAbout />
     </section>
   );
