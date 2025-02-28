@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="w-full min-h-screen md:h-screen flex flex-col items-center justify-center text-white  bg-[#1B1B2A]">
+    <section className="w-full min-h-screen md:h-screen flex flex-col items-center justify-center text-white  bg-[#090910]">
       
       <div className=" absolute inset-0 bg-radial-gradient"></div>
       
@@ -25,12 +25,12 @@ export default function Home() {
           <CanvasModel />
         </div>
 
-        <div className="w-full h-full z-20 flex flex-col items-center xl:items-start lg:items-start md:items-start sm:items-center justify-center md:order-1 sm:order-2 md:ml-48 sm:ml-12 lg:ml-56 px-4 sm:p-8">
-          <div className=" text-center lg:text-start xl:text-start md:text-left sm:text-center font-poppins">
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide">
+        <div className="w-full h-full z-20 flex flex-col items-center xl:items-start lg:items-start md:items-start sm:items-center justify-center md:order-1 sm:order-2 md:ml-24 sm:ml-12 lg:ml-24 px-4 sm:p-8">
+          <div className=" text-center lg:text-start xl:text-start md:text-left sm:text-center">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-semibold  leading-tight  font-outfit">
               Descubre los secretos del universo con la física
             </h1>
-            <p className="mt-4 text-base sm:text-lg lg:text-xl tracking-wide">
+            <p className="mt-4 text-base sm:text-lg lg:text-xl tracking-wide font-poppins">
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
             </p>
           </div>
