@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <div className="flex-1 w-full flex flex-col md:flex-row items-center justify-center">
-        <div className="w-full h-full flex justify-center items-center md:order-2 sm:order-1 z-10">
+        <div className="w-full h-full flex justify-center items-center md:order-2 sm:order-1 z-20">
           <CanvasModel />
         </div>
 

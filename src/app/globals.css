@@ -21,12 +21,38 @@ body {
   background: 
   radial-gradient(circle at top left, #fc4542cb 0%, #bb444259 25%, #772b2b59 30%, #461a1a50 45%, transparent 55%),
   radial-gradient(circle at bottom right, #f0e19ee0 0%, #ad9f5e85 15%, #423f2e88 25%, #3130213a 30%, transparent 35%),
-  url('/images/Esquina2.png') top left/contain no-repeat,
-  url('/images/Esquina1.png') bottom right/contain no-repeat,
+  url('/images/Esquina2.webp') top left/contain no-repeat,
+  url('/images/Esquina1.webp') bottom right/contain no-repeat,
 
   radial-gradient(circle at top center, #0c0c8518 0%,#08085513 40%, #03031d27 45%, transparent 50%);
   
   
+
+  background-position: 
+    top left,
+    bottom right,
+    top left -15vw,
+    bottom right -10vw;
+  
+  position: fixed; 
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: 0;
+  pointer-events: none;
+  
+  /* Fija el fondo respecto a la ventana */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-radial-gradient-about {
+  background: 
+  radial-gradient(circle at top right, #fc4542cb 0%, #bb444259 25%, #772b2b59 30%, #461a1a50 45%, transparent 50%),
+  radial-gradient(circle at bottom left, #f0e19ee0 0%, #ad9f5e85 15%, #423f2e88 25%, #3130213a 30%, transparent 35%),
+  url('/images/Esquina2.webp') top left/contain no-repeat,
+  url('/images/Esquina1.webp') bottom right/contain no-repeat;
+
 
   background-position: 
     top left,
