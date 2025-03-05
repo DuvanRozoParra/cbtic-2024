@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
-
 type CarrouselProps = {
   images: string[];
 };
@@ -19,29 +18,29 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
     const offset = (index - currentIndex + images.length) % images.length;
 
     if (offset === 0) {
-      return " translate-y-0 scale-100 opacity-100 z-10 ";
+      return "translate-y-0 scale-100 opacity-100 z-10";
     }
     if (offset === 1) {
-      return " translate-y-[15%] scale-75 opacity-100 z-0 ";
+      return "translate-y-[10%] scale-90 opacity-80 z-5";  // Mejora la visibilidad de la imagen detrás
     }
     if (offset === images.length - 1) {
-      return "translate-y-[-15%] scale-75 opacity-100 z-0 ";
+      return "translate-y-[-10%] scale-90 opacity-80 z-5"; // Ajuste para la imagen anterior
     }
 
-    return "translate-y-full opacity-0";
+    return "translate-y-full opacity-0 z-0"; // Asegura que las imágenes no visibles queden al fondo
   };
 
   const getImageStyle = (index: number) => {
     const offset = (index - currentIndex + images.length) % images.length;
     if (offset === 0) return "";
-    return "";
+    return "filter blur-sm";  // Puedes ajustar el nivel de desenfoque si es necesario
   };
 
   return (
     <div
-      className="w-full h-full overflow-hidden relative"
+      className="w-full h-full overflow-hidden relative lg:max-w-[70%] mx-auto"  // Ajuste de ancho para pantallas grandes
       style={{
-        perspective: "40px",
+        perspective: "100px", // Incrementa el valor para dar más efecto 3D
       }}
     >
       <div
@@ -59,7 +58,7 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
               key={index}
               className={`absolute w-full h-full transition-all duration-500 ease-in-out ${transformClass} ${imageStyle} flex justify-center items-center`}
             >
-              <Card className="w-full   border-none">
+              <Card className="w-full h-full border-none">
                 <CardContent className="p-0 h-full">
                   <Image
                     src={image}
@@ -68,7 +67,6 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
                     height={800}
                     className="w-full h-full object-contain"
                   />
-
                 </CardContent>
               </Card>
             </div>
@@ -81,10 +79,11 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
           <div
             key={index}
             onClick={() => goToImage(index)}
-            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full cursor-pointer  ${index === currentIndex
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full cursor-pointer  ${
+              index === currentIndex
                 ? "bg-[#FC4442]"
                 : "border-2 border-[#FC4442] bg-transparent hover:bg-[#FC4442]"
-              } transition-colors duration-300`}
+            } transition-colors duration-300`}
           />
         ))}
       </div>
