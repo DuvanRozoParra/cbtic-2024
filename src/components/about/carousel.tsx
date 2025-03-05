@@ -61,7 +61,7 @@ export function CarouselAbout() {
             />
           </div>
           <div className="relative z-10 flex flex-col sm:flex-row items-center sm:items-start justify-center">
-            <div className="w-full sm:w-1/2 h-[400px] sm:h-[500px] relative order-1 sm:order-none px-4 sm:pl-12 flex justify-center items-center">
+            <div className="w-full sm:w-1/2 h-[400px] sm:h-[500px] xl:h-[600px] relative order-1 sm:order-none px-4 sm:pl-12 flex justify-center items-center">
               <div className="relative w-full h-full mb-10 mt-8 sm:mt-10 flex justify-center items-center">
                 <Image
                   src={"/images/META-SILUETA-1.webp"}
@@ -73,7 +73,6 @@ export function CarouselAbout() {
                 />
               </div>
             </div>
-
             <div className="w-full sm:w-1/2 px-8 sm:px-8 lg:pr-28 py-6 sm:py-10 order-2 sm:order-none">
               <h1 className="text-3xl sm:text-4xl font-bold md-10 md:mb-28 text-center sm:text-left">
                 Sobre Nosotros

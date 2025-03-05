@@ -8,7 +8,7 @@ export const Navbar = () => {
   const pathname = usePathname();
   return (
     <section
-      className={`w-screen h-14 fixed top-0 z-50 flex items-center justify-center p-5 bg-transparent  ${
+      className={`w-screen h-14 fixed top-0 z-50 flex items-center justify-center p-5 bg-[#090910] bg-opacity-20 backdrop-blur-sm ${
         pathname !== "/" ? "text-white" : "text-white"
       }`}
     >
