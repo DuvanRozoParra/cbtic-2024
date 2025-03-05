@@ -151,10 +151,11 @@ export function TeacherAbout() {
           {ArrayEquipo.map((elemento, index) => (
             <Card
               key={index}
+              backgroundImage="/images/Card_Background.png"
               className="bg-white border-b border-gray-300 transform transition-transform duration-200 ease-in-out hover:bg-gray-200 hover:scale-105 active:scale-100"
             >
               <CardContent className="flex flex-col items-center">
-                <section className="relative w-full h-48 flex-shrink-0 mb-2">
+                <section className="relative w-full h- flex-shrink-0 mb-2">
                   <Image
                     src={elemento.image}
                     alt={`Foto de perfil de ${elemento.name}`}
