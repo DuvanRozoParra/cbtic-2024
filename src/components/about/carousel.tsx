@@ -152,7 +152,7 @@ export function CarouselAbout() {
         </div>
         <div className="w-full sm:w-1/2 mt-10">
           <Image
-            src="/images/Aboutimage.png"
+            src="/images/AboutImage.png"
             alt="Imagen adicional"
             width={480}
             height={500}
