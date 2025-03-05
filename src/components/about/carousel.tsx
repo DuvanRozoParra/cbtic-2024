@@ -130,7 +130,7 @@ export function CarouselAbout() {
               </button>
             </div>
             <div className="flex-grow flex items-center justify-center">
-              <div className="text-base text-white text-center lg:text-base md:text-base sm:text-sm px-2">
+              <div className="text-base text-white text-center lg:text-base md:text-base sm:text-sm px-2 mb-10">
                 {activeTab === "mision" && (
                   <p>
                     Coadyuvar al desarrollo de planes, programas y proyectos de formación, investigación, extensión,
