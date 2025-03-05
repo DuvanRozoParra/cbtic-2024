@@ -34,7 +34,7 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
   const getImageStyle = (index: number) => {
     const offset = (index - currentIndex + images.length) % images.length;
     if (offset === 0) return "";
-    return "filter blur-sm";
+    return "";
   };
 
   return (
