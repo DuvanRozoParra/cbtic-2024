@@ -74,7 +74,7 @@ export function CarouselAbout() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/2 px-4 sm:px-8 lg:pr-28 py-6 sm:py-12 order-2 sm:order-none">
+            <div className="w-full sm:w-1/2 px-8 sm:px-8 lg:pr-28 py-6 sm:py-10 order-2 sm:order-none">
               <h1 className="text-3xl sm:text-4xl font-bold md-10 md:mb-28 text-center sm:text-left">
                 Sobre Nosotros
               </h1>
@@ -100,16 +100,16 @@ export function CarouselAbout() {
         </section>
       </div>
       <div className="relative flex flex-col sm:flex-row gap-4">
-        <div className="w-full sm:w-1/2 relative">
+        <div className="w-full sm:w-1/2 relative ">
           <Image
             src="/images/Mision_vision.webp"
             alt="Fondo Misión y Visión"
-            width={500}
-            height={500}
+            width={800}
+            height={800}
             className="object-cover rounded-lg"
           />
-          <div className="absolute inset-0 flex flex-col  bg-opacity-50 p-0 sm:p-2">
-            <div className="flex justify-center gap-4 space-x-20 mr-20 ">
+          <div className="absolute inset-0 flex flex-col  bg-opacity-50 p-0 sm:p-2 ">
+            <div className="flex justify-center gap-4 space-x-5 sm:space-x-20 md:space-x-20 mr-20 mb-10 md:mb-4 ">
               <button
                 onClick={() => setActiveTab("mision")}
                 className={`text-xl font-bold ${activeTab === "mision"
@@ -130,7 +130,7 @@ export function CarouselAbout() {
               </button>
             </div>
             <div className="flex-grow flex items-center justify-center">
-              <div className="text-base text-white text-center lg:text-base md:text-base sm:text-sm px-2 mb-20">
+              <div className="text-sm text-white text-center lg:text-base md:text-base sm:text-sm  px-2 mb-20">
                 {activeTab === "mision" && (
                   <p>
                     Coadyuvar al desarrollo de planes, programas y proyectos de formación, investigación, extensión,
@@ -152,7 +152,7 @@ export function CarouselAbout() {
         </div>
         <div className="w-full sm:w-1/2 mt-10">
           <Image
-            src="/images/Aboutimage.png"
+            src="/images/AboutImage.png"
             alt="Imagen adicional"
             width={480}
             height={500}
@@ -171,10 +171,10 @@ export function CarouselAbout() {
               backgroundImage="/images/Card_Background.png"
               className="min-w-2/3 w-full h-full transform transition-transform overflow-hidden duration-200 ease-in-out hover:scale-105 active:scale-100"
             >
-              <CardContent className="relative text-white flex flex-col p-20 lg:p-7 md:p-10 sm:p-2 h-full">
+              <CardContent className="relative text-white flex flex-col  ml-2 p-10 lg:p-7 md:p-10 sm:p-10 h-full">
                 <div className="flex flex-col lg:flex-row lg:items-center items-center md:items-start h-full">
                   <div className="sm:w-1/4 md:w-2/4 lg:w-3/5 w-3/4 mr-28 text-start sm:mr-32 md:pl-15 lg:text-left lg:pl-5 lg:mr-5 z-10">
-                    <h3 className="text-lg font-semibold mb-4">{elemento.name}</h3>
+                    <h3 className="text-base sm:text-base md:text-lg font-semibold mb-4">{elemento.name}</h3>
                     <div className="space-y-2 text-sm">
                       <p className="font-semibold">Formación: {elemento.work}</p>
                       {elemento.estudios.map((estudio, i) => (
