@@ -91,7 +91,7 @@ export function CarouselAbout() {
           </h1>
           <CarrouselImages
             images={[
-              "/images/testimages/imagentest1.png",
+              "/images/testimages/Imagentest1.png",
               "/images/testimages/imagentest2.png",
               "/images/testimages/imagentest3.png",
             ]}
