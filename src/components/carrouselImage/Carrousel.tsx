@@ -38,7 +38,7 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
 
   return (
     <div
-      className="w-full h-full overflow-hidden relative lg:max-w-[70%] xl:max-w-[60%] 2xl:max-w-[50%] mx-auto"  // Ajuste de ancho para pantallas xl y 2xl
+      className="w-full h-full overflow-hidden relative lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[60%] mx-auto"  // Ajuste de ancho para pantallas xl y 2xl
       style={{
         perspective: "150px", // Incrementa el valor para dar más efecto 3D en pantallas grandes
       }}

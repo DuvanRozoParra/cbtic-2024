@@ -85,7 +85,7 @@ export function CarouselAbout() {
             </div>
           </div>
         </div>
-        <section className="flex flex-col items-center gap-10 w-full md:w-4/5 h-[500px] mt-8 mb-10">
+        <section className="flex flex-col items-center gap-10 w-full md:4/5 h-[600px] mt-8 mb-10">
           <h1 className=" text-center text-4xl text-white md:mb-10  md:mt-8 mt-0 font-semibold">
             Descubre Nuestra Comunidad Académica
           </h1>
@@ -103,9 +103,9 @@ export function CarouselAbout() {
           <Image
             src="/images/Mision_vision.webp"
             alt="Fondo Misión y Visión"
-            width={800}
-            height={800}
-            className="object-cover rounded-lg"
+            width={500}
+            height={500}
+            className="object-contain rounded-lg"
           />
           <div className="absolute inset-0 flex flex-col  bg-opacity-50 p-0 sm:p-2 ">
             <div className="flex justify-center gap-4 space-x-5 sm:space-x-20 md:space-x-20 mr-20 mb-10 md:mb-4 ">
