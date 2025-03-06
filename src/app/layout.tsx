@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Poppins, Roboto, Outfit } from "next/font/google";
+import {  Roboto } from "next/font/google";
 import { Navbar } from "@components/navbar";
 import "./globals.css";
 
@@ -8,16 +8,6 @@ const roboto_init = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "700"],
   variable: "--font-roboto",
-});
-const outfit_init = Outfit({
-  subsets: ["latin"],
-  weight: ["100", "300", "700"],
-  variable: "--font-outfit",
-});
-const poppins_init = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "300", "700"],
-  variable: "--font-poppins",
 });
 
 const geistSans = localFont({
@@ -45,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto_init.variable} ${outfit_init.variable} ${poppins_init.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto_init.variable}  antialiased`}
       >
         <Navbar />
         {children}

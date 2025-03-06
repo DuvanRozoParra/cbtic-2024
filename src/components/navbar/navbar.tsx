@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
 import { NavigationMenu, NavigationMenuList } from "@components/ui/navigation-menu";
 import { StandarButton } from "./";
 import { Atom, Menu, X, ChevronDown } from "lucide-react";
@@ -9,7 +8,6 @@ import Link from "next/link";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [mobileAsignaturasOpen, setMobileAsignaturasOpen] = useState(false);
-  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
