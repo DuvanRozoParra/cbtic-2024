@@ -1,6 +1,5 @@
 import { CanvasModel } from "@/components/LandingPageOwl/CanvasModel/CanvasModel";
 import { Button } from "@/components/ui/button";
-import { Atom } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
