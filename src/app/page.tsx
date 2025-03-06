@@ -9,19 +9,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="w-full min-h-screen md:h-screen flex flex-col items-center justify-center text-white  bg-[#090910]">
+    <section className="w-full min-h-screen md:h-screen flex flex-col items-center justify-center text-white bg-[#090910] overflow-x-hidden">
       
       <div className=" absolute inset-0 bg-radial-gradient"></div>
-      
-      <div className="w-full sm:w-auto order-first sm:absolute sm:top-8 sm:left-5 lg:top-10 lg:left-20 z-20 px-4 py-4 sm:px-0 sm:py-0">
-        <p className="font-roboto font-semibold text-cyan-50 flex items-center gap-2 ">
-          <Atom />
-          CBTIC
-        </p>
-      </div>
-
       <div className="flex-1 w-full flex flex-col md:flex-row items-center justify-center">
-        <div className="w-full h-full flex justify-center items-center md:order-2 sm:order-1 z-20">
+        <div className="md:w-full md:h-full sm:w-2/3 sm:h-2/3 flex justify-center items-center md:order-2 sm:order-1 z-20 ">
           <CanvasModel />
         </div>
 

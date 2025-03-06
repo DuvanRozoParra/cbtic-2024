@@ -12,31 +12,31 @@ export const Asignature = () => {
       <NavigationMenuTrigger className="bg-transparent">
         Asignaturas
       </NavigationMenuTrigger>
-      <NavigationMenuContent className="md:w-[200px]">
-        <ul className="flex flex-col">
+      <NavigationMenuContent className="md:w-[200px] rounded-md bg-[#0f0f1b] bg-opacity-90 backdrop-blur-sm p-2">
+        <ul className="flex flex-col gap-3">
           <li>
             <Link
               href="/asignatures/faraday/info"
-              className="group text-white hover:text-white hover:bg-black bg-transparent p-2 flex flex-col items-start"
+              className="group flex flex-col items-start p-2 rounded-md transition-colors duration-300 text-white hover:bg-[#090910a2]"
             >
-              <h2 className="mt-10 scroll-m-20 border-b pb-2 text-lg font-semibold tracking-tight transition-colors first:mt-0">
+              <h2 className="text-lg font-semibold tracking-tight border-b pb-1">
                 Ley de Faraday
               </h2>
-              <p className="text-wrap text-start text-zinc-600 group-hover:text-white">
-                Interaccion de la ley de faraday
+              <p className="text-sm">
+                Interacción de la ley de Faraday
               </p>
             </Link>
           </li>
           <li>
             <Link
               href="/asignatures/pendulum/info"
-              className="group text-black hover:text-white hover:bg-black bg-transparent p-2 flex flex-col items-start"
+              className="group flex flex-col items-start p-2 rounded-md transition-colors duration-300 text-white hover:bg-[#090910a2]"
             >
-              <h2 className="mt-10 scroll-m-20 border-b pb-2 text-lg font-semibold tracking-tight transition-colors first:mt-0">
-                Pendulo
+              <h2 className="text-lg font-semibold tracking-tight border-b pb-1">
+                Péndulo
               </h2>
-              <p className="text-wrap text-start text-zinc-600 group-hover:text-white">
-                Interaccion del pendulum
+              <p className="text-sm">
+                Interacción del péndulo
               </p>
             </Link>
           </li>
