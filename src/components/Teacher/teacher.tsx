@@ -111,7 +111,7 @@ export function TeacherAbout() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-4/5 z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 z-10">
           {GroupCards.map((grupo, groupIndex) => (
             <div key={groupIndex} className="space-y-8 relative">
 
@@ -121,10 +121,9 @@ export function TeacherAbout() {
                 <Card
                   backgroundImage="/images/ContainerTeacher.png"
                   key={index}
-                  className="border-gray-300 relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full object-contain"
+                  className="border-gray-300 relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full max-w-xl object-contain"
                 >
-                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2/3 h-[2px] w-8 bg-white"></div>
-
+                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2/3 h-[2px] w-8 opacity-50 bg-white"></div>
 
                   <CardContent className="flex items-center w-full">
                     <div className="relative w-2/4 sm:w-2/3 md:w-2/3 h-24 aspect-square overflow-hidden rounded-full mr-10">
@@ -137,10 +136,12 @@ export function TeacherAbout() {
                       />
                     </div>
 
-                    <div className="text-white text-left w-full ">
-                      <h3 className="md:font-semibold sm:font-normal font-light text-xs sm:text-sm md:text-sm">{elemento.name}</h3>
+                    <div className="text-white text-left w-full">
+                      <h3 className="md:font-semibold sm:font-normal font-light text-xs sm:text-sm md:text-sm">
+                        {elemento.name}
+                      </h3>
                       <p className="text-xs sm:text-xs md:text-sm pb-2">{elemento.work}</p>
-                      <Button className="w-2/3 sm:w-2/3 md:w-2/3 lg:w-1/2 pb-2 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
+                      <Button className="w-2/3 sm:w-2/3 md:w-2/3 lg:w-1/2 lg:max-w-[200px] pb-2 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
                         <p className="font-poppins text-[0.65rem] sm:text-xs md:text-sm">Descargar CV</p>
                       </Button>
                     </div>
