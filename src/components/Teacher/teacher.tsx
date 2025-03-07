@@ -1,142 +1,106 @@
 import React from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "../ui/button";
 
-const ArrayEquipo = [
+type Teacher = {
+  name: string;
+  image: string;
+  work: string;
+}
+
+const ArrayEquipo: Teacher[] = [
   {
     name: "MARÍA ALEJANDRA CRUZ DOMÍNGUEZ",
-    image: "/images/Profesores/Maria_Alejandra_Cruz_Dominguez.jpg", 
-    estudios: [
-      "Magíster en Gestión Ambiental y Energética de las Organizaciones - UNIR",
-      "Magíster (c) en Tecnología Educativa y Competencias Digitales - UNIR",
-    ],
+    image: "/images/Profesores/Maria_Alejandra_Cruz_Dominguez.jpg",
     work: "Jefe de Departamento Ciencias Básicas (E)",
   },
   {
     name: "ELIANA MARÍTZA TULCÁN MEJÍA",
     image: "/images/Profesores/Eliana_Maritza_Tulcan_Mejia.png",
-    estudios: ["Química de Alimentos - UPTC", "Magíster en Química - UPTC"],
     work: "Docente",
   },
   {
     name: "JOHAN RICARDO MORALES ORTÍZ",
     image: "/images/Profesores/Johan_Ricardo_Morales_Ortiz.jpg",
-    estudios: ["Ingeniero Agroindustrial - Unillanos"],
     work: "Jefe de Laboratorios",
   },
   {
     name: "HAZLITT ENERIETH NIÑO MENDIVELSO",
     image: "/images/Profesores/Hazlitt_Enerieth_Nino_Mendivelso.jpg",
-    estudios: [
-      "físico - UPTC",
-      "magíster en didáctica de la física y la química en educación secundaria y bachillerato - UNIR",
-    ],
     work: "Consejera de Ciencias Básicas",
   },
   {
     name: "MARIBEL DUQUE LÓPEZ",
     image: "/images/Profesores/Maribel_Duque_Lopez.jpg",
-    estudios: [
-      "Matemático - Universidad Central",
-      "Magíster en Educación - Corporación Universitaria Minuto de Dios",
-      "Ingeniería de Telecomunicaciones (en curso) - Universidad Nacional Abierta y a Distancia",
-    ],
     work: "Docente",
   },
   {
     name: "JAVIER GUILLERMO BERNAL AGUILAR",
     image: "/images/Profesores/Javier_Guillermo_Bernal_Aguilar.jpg",
-    estudios: [
-      "Ingeniero Químico - Universidad de América",
-      "Magíster en Ingeniería Avanzada de Producción Logística y Cadena de Suministro - Universidad Politécnica de Valencia",
-    ],
     work: "Docente",
   },
   {
     name: "DIEGO ANDRÉS PALTA PRADO",
     image: "/images/Profesores/Diego_Andres_Palta_Prado.jpg",
-    estudios: [
-      "Ingeniero Físico - Universidad del Cauca",
-      "Magíster (c) en Biotecnología - Universidad del Cauca ",
-    ],
     work: "Docente",
   },
   {
     name: "DAVID FELIPE CASTAÑEDA ANGARITA",
     image: "/images/Profesores/David_Felipe_Castaneda_Angarita.png",
-    estudios: [
-      "Licenciado en Matemáticas y Física",
-      "Universidad de los Llanos",
-      "Magíster (c) en Educación STEAM para el Desarrollo Social",
-    ],
     work: "Docente",
   },
   {
     name: "SANTIAGO ALEJANDRO ZÚÑIGA MELO",
     image: "/images/Profesores/Santiago_Alejandro_Zuniga_Melo.jpg",
-    estudios: [
-      "Ingeniero Físico - Universidad del Cauca",
-      "Magíster(c) en Ciencia de Datos",
-    ],
     work: "Docente",
   },
   {
     name: "FIDEL BAUTISTA RODRIGUEZ PUERTAS",
     image: "/images/Profesores/Fidel_Bautista_Rodríguez_Puertas.jpg",
-    estudios: [
-      "Físico - Universidad de la Habana Cuba",
-      "Magíster en Física - Universidad de la Habana Cuba",
-      "Doctor en Física Teórica - Universidad de la Habana Cuba",
-    ],
     work: "Docente",
   },
   {
     name: "ESNEIDER LEANDRO GARAVITO PÉREZ",
     image: "/images/Profesores/Esneider_Leandro_Garavito_Perez.jpg",
-    estudios: ["Físico - UPTC"],
     work: "Docente",
   },
   {
-    name: "Alejandro Calderón Vásquez",
+    name: "ALEJANDRO CALDERON VASQUEZ",
     image: "/images/Profesores/Alejandro_Calderon_Vasquez.jpg",
-    estudios: [
-      "Licenciado en Matemáticas y Física - Universidad de los Llanos",
-      "Especialización en Proyectos de Desarrollo - Escuela Superior de Administración Pública (ESAP)",
-    ],
     work: "Docente",
   },
   {
-    name: "Jesús Alejando González Rojas",
+    name: "JESUS ALEJANDRO GONZALEZ ROJAS",
     image: "/images/Profesores/Jesus_Alejando_Gonzalez_Rojas.jpg",
-    estudios: [
-      "Biólogo - Universidad de los Llanos",
-      "Magíster (c) en Gestión de Cuencas Hidrográficas - Universidad Santo Tomás",
-    ],
     work: "Docente",
   },
 ];
 
+const Subdivide = (array: Teacher[]): Teacher[][] => {
+  const grupos: Teacher[][] = [];
+  for (let i = 0; i < array.length; i += 3) {
+    grupos.push(array.slice(i, i + 3));
+  }
+  return grupos;
+};
+
 export function TeacherAbout() {
+  const GroupCards = Subdivide(ArrayEquipo);
+
   return (
-    <main className="flex flex-col p-8 gap-5 bg-[#f8f8f8] justify-center items-center pt-16">
-      <div className="w-4/5 h-40 md:h-40 flex justify-center items-center">
+    <main className="relative flex flex-col p-8 gap-5 bg-[#090910] text-white justify-center items-center pt-16 min-h-screen overflow-hidden">
+      <div className="absolute inset-0 bg-radial-gradient-teacher z-0"></div>
+      <div className="w-4/5 h-40 md:h-40 flex justify-center items-center z-10">
         <div className="relative w-full h-full rounded-md overflow-hidden">
-          <Image
-            src="/images/fondo_unimeta.webp"
-            alt="Fondo institucional de la Unimeta"
-            fill
-            className="object-cover object-center blur-sm"
-          />
-          <div className="absolute inset-0 bg-black opacity-50" aria-hidden="true" />
-          <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl md:text-5xl font-bold">
-            Nuestros Docentes:
+          <h1 className="absolute inset-0 flex items-center justify-center text-xl sm:text-3xl md:text-5xl font-bold">
+            Nuestros Docentes
           </h1>
         </div>
       </div>
 
-      <section className="w-full flex flex-col items-center justify-center gap-5">
+      <section className="w-full flex flex-col items-center justify-center gap-5 z-10">
         <div className="w-4/5 text-center mb-2">
-          <h2 className="text-4xl font-bold mb-4">Equipo de trabajo</h2>
           <p className="text-lg text-center">
             El equipo de docentes en Ciencias Básicas es el pilar fundamental de nuestra
             institución, comprometido con la formación integral de nuestros estudiantes.
@@ -147,37 +111,43 @@ export function TeacherAbout() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-4/5">
-          {ArrayEquipo.map((elemento, index) => (
-            <Card
-              key={index}
-              backgroundImage="/images/Card_Background.png"
-              className="bg-white border-b border-gray-300 transform transition-transform duration-200 ease-in-out hover:bg-gray-200 hover:scale-105 active:scale-100"
-            >
-              <CardContent className="flex flex-col items-center">
-                <section className="relative w-full h- flex-shrink-0 mb-2">
-                  <Image
-                    src={elemento.image}
-                    alt={`Foto de perfil de ${elemento.name}`}
-                    className="object-contain rounded-t-sm object-center mt-4"
-                    style={{ backgroundColor: "#ffffff" }}
-                    fill
-                    sizes="100% 100%"
-                  />
-                </section>
-                <section className="p-4 text-center flex flex-col gap-2">
-                  <h3 className="font-bold">{elemento.name}</h3>
-                  <div className="space-y-1">
-                    {elemento.estudios.map((estudio, i) => (
-                      <p key={i} className="text-sm">
-                        {estudio}
-                      </p>
-                    ))}
-                  </div>
-                  <p className="font-bold">{elemento.work}</p>
-                </section>
-              </CardContent>
-            </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-4/5 z-10">
+          {GroupCards.map((grupo, groupIndex) => (
+            <div key={groupIndex} className="space-y-8 relative">
+
+              <div className="absolute -left-5 -translate-x-1/2 top-24  h-3/4 w-[2px] bg-white"></div>
+
+              {grupo.map((elemento, index) => (
+                <Card
+                  backgroundImage="/images/ContainerTeacher.png"
+                  key={index}
+                  className="border-gray-300 relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full object-contain"
+                >
+                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2/3 h-[2px] w-8 bg-white"></div>
+
+
+                  <CardContent className="flex items-center w-full">
+                    <div className="relative w-1/4 sm:w-1/3 md:w-1/3 h-24 aspect-square overflow-hidden rounded-full mr-10">
+                      <Image
+                        src={elemento.image}
+                        alt={`Foto de perfil de ${elemento.name}`}
+                        className="object-cover"
+                        fill
+                        sizes="100%"
+                      />
+                    </div>
+
+                    <div className="text-white text-left w-full ">
+                      <h3 className="md:font-semibold sm:font-normal font-light text-xs sm:text-sm md:text-sm">{elemento.name}</h3>
+                      <p className="text-xs sm:text-xs md:text-sm pb-2">{elemento.work}</p>
+                      <Button className="w-2/3 sm:w-2/3 md:w-2/3 lg:w-1/2 pb-2 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
+                        <p className="font-poppins text-[0.65rem] sm:text-xs md:text-sm">Descargar CV</p>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           ))}
         </div>
       </section>

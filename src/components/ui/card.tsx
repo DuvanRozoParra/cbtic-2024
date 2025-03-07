@@ -11,14 +11,14 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
       ref={ref}
       style={{
         backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
-        backgroundSize: "contain",
+        backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundColor: "transparent",
         ...style,
       }}
       className={cn(
-        "  text-card-foreground shadow-sm", // se agrega overflow-hidden
+        "  text-card-foreground shadow-sm", //
         className
       )}
       {...props}
@@ -27,11 +27,9 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
 )
 Card.displayName = "Card"
 
-// Los demás componentes se mantienen igual...
-
 const CardHeader = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn("flex flex-col space-y-1.5 p-0", className)} {...props} />
+    <div ref={ref} className={cn("flex flex-col space-y-1.5 ", className)} {...props} />
   )
 )
 CardHeader.displayName = "CardHeader"
@@ -56,14 +54,14 @@ CardDescription.displayName = "CardDescription"
 
 const CardContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn("p-10", className)} {...props} />
+    <div ref={ref} className={cn("p-5", className)} {...props} />
   )
 )
 CardContent.displayName = "CardContent"
 
 const CardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn("flex items-center p-10 pt-0", className)} {...props} />
+    <div ref={ref} className={cn("flex items-center p-10", className)} {...props} />
   )
 )
 CardFooter.displayName = "CardFooter"
