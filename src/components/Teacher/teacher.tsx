@@ -12,7 +12,7 @@ type Teacher = {
 const ArrayEquipo: Teacher[] = [
   {
     name: "MARÍA ALEJANDRA CRUZ DOMÍNGUEZ",
-    image: "/images/Profesores/Maria_Alejandra_Cruz_Dominguez.jpg",
+    image: "/images/Profesores/Maria_Alejandra_Cruz_Dominguez.png",
     work: "Jefe de Departamento Ciencias Básicas (E)",
   },
   {
@@ -22,27 +22,27 @@ const ArrayEquipo: Teacher[] = [
   },
   {
     name: "JOHAN RICARDO MORALES ORTÍZ",
-    image: "/images/Profesores/Johan_Ricardo_Morales_Ortiz.jpg",
+    image: "/images/Profesores/Johan_Ricardo_Morales_Ortiz.png",
     work: "Jefe de Laboratorios",
   },
   {
     name: "HAZLITT ENERIETH NIÑO MENDIVELSO",
-    image: "/images/Profesores/Hazlitt_Enerieth_Nino_Mendivelso.jpg",
+    image: "/images/Profesores/Hazlitt_Enerieth_Nino_Mendivelso.png",
     work: "Consejera de Ciencias Básicas",
   },
   {
     name: "MARIBEL DUQUE LÓPEZ",
-    image: "/images/Profesores/Maribel_Duque_Lopez.jpg",
+    image: "/images/Profesores/Maribel_Duque_Lopez.png",
     work: "Docente",
   },
   {
     name: "JAVIER GUILLERMO BERNAL AGUILAR",
-    image: "/images/Profesores/Javier_Guillermo_Bernal_Aguilar.jpg",
+    image: "/images/Profesores/Javier_Guillermo_Bernal_Aguilar.png",
     work: "Docente",
   },
   {
     name: "DIEGO ANDRÉS PALTA PRADO",
-    image: "/images/Profesores/Diego_Andres_Palta_Prado.jpg",
+    image: "/images/Profesores/Diego_Andres_Palta_Prado.png",
     work: "Docente",
   },
   {
@@ -52,27 +52,27 @@ const ArrayEquipo: Teacher[] = [
   },
   {
     name: "SANTIAGO ALEJANDRO ZÚÑIGA MELO",
-    image: "/images/Profesores/Santiago_Alejandro_Zuniga_Melo.jpg",
+    image: "/images/Profesores/Santiago_Alejandro_Zuniga_Melo.png",
     work: "Docente",
   },
   {
     name: "FIDEL BAUTISTA RODRIGUEZ PUERTAS",
-    image: "/images/Profesores/Fidel_Bautista_Rodríguez_Puertas.jpg",
+    image: "/images/Profesores/Fidel_Bautista_Rodríguez_Puertas.png",
     work: "Docente",
   },
   {
     name: "ESNEIDER LEANDRO GARAVITO PÉREZ",
-    image: "/images/Profesores/Esneider_Leandro_Garavito_Perez.jpg",
+    image: "/images/Profesores/Esneider_Leandro_Garavito_Perez.png",
     work: "Docente",
   },
   {
     name: "ALEJANDRO CALDERON VASQUEZ",
-    image: "/images/Profesores/Alejandro_Calderon_Vasquez.jpg",
+    image: "/images/Profesores/Alejandro_Calderon_Vasquez.png",
     work: "Docente",
   },
   {
     name: "JESUS ALEJANDRO GONZALEZ ROJAS",
-    image: "/images/Profesores/Jesus_Alejando_Gonzalez_Rojas.jpg",
+    image: "/images/Profesores/Jesus_Alejando_Gonzalez_Rojas.png",
     work: "Docente",
   },
 ];
@@ -115,7 +115,7 @@ export function TeacherAbout() {
           {GroupCards.map((grupo, groupIndex) => (
             <div key={groupIndex} className="space-y-8 relative">
 
-              <div className="absolute -left-5 -translate-x-1/2 top-24  h-3/4 w-[2px] bg-white"></div>
+              <div className="absolute -left-5 -translate-x-1/2 top-24  h-3/4 w-[2px] opacity-50 bg-white"></div>
 
               {grupo.map((elemento, index) => (
                 <Card
@@ -127,11 +127,11 @@ export function TeacherAbout() {
 
 
                   <CardContent className="flex items-center w-full">
-                    <div className="relative w-1/4 sm:w-1/3 md:w-1/3 h-24 aspect-square overflow-hidden rounded-full mr-10">
+                    <div className="relative w-2/4 sm:w-2/3 md:w-2/3 h-24 aspect-square overflow-hidden rounded-full mr-10">
                       <Image
                         src={elemento.image}
                         alt={`Foto de perfil de ${elemento.name}`}
-                        className="object-cover"
+                        className="object-contain"
                         fill
                         sizes="100%"
                       />
