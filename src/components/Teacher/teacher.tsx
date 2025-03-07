@@ -113,7 +113,7 @@ export function TeacherAbout() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 z-10">
           {GroupCards.map((grupo, groupIndex) => (
-            <div key={groupIndex} className="space-y-8 relative">
+            <div key={groupIndex} className="space-y-8 relative ">
 
               <div className="absolute -left-5 -translate-x-1/2 top-24  h-3/4 w-[2px] opacity-50 bg-white"></div>
 
