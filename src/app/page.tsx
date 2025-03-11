@@ -8,29 +8,27 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="w-full min-h-screen md:h-screen flex flex-col items-center justify-center text-white bg-[#090910] overflow-x-hidden">
-      
-      <div className=" absolute inset-0 bg-radial-gradient"></div>
-      <div className="flex-1 w-full flex flex-col md:flex-row items-center justify-center">
-        <div className="md:w-full md:h-full sm:w-2/3 sm:h-2/3 flex justify-center items-center md:order-2 sm:order-1 z-20 ">
-          <CanvasModel />
-        </div>
+    <section className="w-full min-h-screen text-white bg-[#090910] overflow-x-hidden relative">
+      <div className="absolute inset-0 bg-radial-gradient"></div>
 
-        <div className="w-full h-full z-20 flex flex-col items-center xl:items-start lg:items-start md:items-start sm:items-center justify-center md:order-1 sm:order-2 md:ml-24 sm:ml-12 lg:ml-24 px-4 sm:p-8">
-          <div className=" text-center lg:text-start xl:text-start md:text-left sm:text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-semibold  leading-tight  font-outfit">
-              Descubre los secretos del universo con la física
-            </h1>
-            <p className="mt-4 text-base sm:text-lg lg:text-xl tracking-wide font-poppins">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-            </p>
-          </div>
-          <div className="mt-6">
-            <Button className="p-7 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-95 transition-transform duration-300 ease-in-out">
-              <p className="font-poppins text-lg">¡Comienza ahora!</p>
-            </Button>
-          </div>
+
+      <div className="absolute w-full h-[40%] md:top-0 md:left-0 md:w-2/5 md:h-full md:ml-24 z-20 flex flex-col items-center md:items-start justify-center px-4 ">
+        <div className="text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl mt-16 sm:mt-0 lg:text-5xl font-semibold leading-tight font-outfit">
+            Descubre los secretos del universo con la física
+          </h1>
+          <p className="mt-4 text-base sm:text-lg lg:text-xl tracking-wide font-poppins">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          </p>
         </div>
+        <div className="mt-6">
+          <Button className="p-7 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-95 transition-transform duration-300 ease-in-out">
+            <p className="font-poppins text-lg">¡Comienza ahora!</p>
+          </Button>
+        </div>
+      </div>
+      <div className="w-full h-[100vh] top-20 md:h-screen md:ml-56 z-10 flex items-center pointer-events-none">
+        <CanvasModel />
       </div>
     </section>
   );

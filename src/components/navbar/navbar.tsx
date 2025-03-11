@@ -12,7 +12,7 @@ export const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <section className="w-screen h-14 fixed top-0 z-50 flex items-center justify-between p-5 bg-[#090910] bg-opacity-40 backdrop-blur-sm text-white border-b border-[#07070f]">
+    <section className="w-screen h-14 fixed top-0 z-50 flex items-center justify-between p-5 bg-[#090910] bg-opacity-0 backdrop-blur-sm text-white ">
       <div className="flex items-center justify-between w-full">
         <div className="text-xl flex flex-row gap-2 font-bold">
           <Atom className="h-6 w-6" /> CBTIC
@@ -58,7 +58,7 @@ export const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="sm:hidden absolute top-14 left-0 w-full bg-[#090910] bg-opacity-90 backdrop-blur-sm z-10">
+        <div className="sm:hidden absolute top-14 left-0 w-full bg-[#090910] bg-opacity-90 backdrop-blur-sm z-10 ">
           <NavigationMenu>
             <NavigationMenuList className="w-full flex flex-col items-center text-center px-4 py-3 space-y-2">
               <StandarButton path="Home" name="Home" />

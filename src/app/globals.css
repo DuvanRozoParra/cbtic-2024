@@ -41,8 +41,7 @@ body {
   z-index: 0;
   pointer-events: none;
   
-  /* Fija el fondo respecto a la ventana */
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
@@ -68,7 +67,7 @@ body {
   pointer-events: none;
   
   /* Fija el fondo respecto a la ventana */
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
@@ -96,7 +95,7 @@ body {
   z-index: 0;
   pointer-events: none;
   
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
