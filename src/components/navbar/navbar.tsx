@@ -79,9 +79,8 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Menú móvil */}
       {isOpen && (
-        <div className="sm:hidden absolute top-14 left-0 w-full bg-[#090910] bg-opacity-20 backdrop-blur-sm z-10 flex flex-col items-center justify-center">
+        <div className="sm:hidden absolute top-14 left-0 w-full bg-[#090910] bg-opacity-60 backdrop-blur-sm z-10 flex flex-col items-center justify-center">
           <NavigationMenu>
             <NavigationMenuList className="flex flex-col items-center justify-center text-center px-4 py-3 space-y-2">
               <StandarButton path="Home" name="Home" />
