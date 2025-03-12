@@ -74,7 +74,7 @@ export function CarouselAbout() {
               </div>
             </div>
             <div className="w-full sm:w-1/2 px-8 sm:px-8 lg:pr-28 py-6 sm:py-10 order-2 sm:order-none">
-              <h1 className="text-3xl sm:text-4xl font-bold md-10 md:mb-28 text-center sm:text-left">
+              <h1 className="text-3xl sm:text-4xl font-bold mt-5   md:mb-32 text-center">
                 Sobre Nosotros
               </h1>
               <p className="text-sm sm:text-base leading-relaxed sm:leading-loose text-justify sm:bg-transparent p-4 sm:p-0 rounded-lg">

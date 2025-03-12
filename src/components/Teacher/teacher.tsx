@@ -118,36 +118,38 @@ export function TeacherAbout() {
               <div className="absolute -left-5 -translate-x-1/2 top-24  h-3/4 w-[2px] opacity-50 bg-white"></div>
 
               {grupo.map((elemento, index) => (
-                <Card
-                  backgroundImage="/images/ContainerTeacher.png"
-                  key={index}
-                  className="border-gray-300 relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full max-w-xl object-contain"
-                >
-                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2/3 h-[2px] w-8 opacity-50 bg-white"></div>
+                <div key={index} className="relative">
+                  <Card
+                    backgroundImage="/images/ContainerTeacher.png"
+                    className="border-gray-300 relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full max-w-xl object-contain z-20"
+                  >
+                    <CardContent className="flex items-center w-full ">
+                      <div className="relative w-2/4 sm:w-2/3 md:w-2/3 h-24 aspect-square overflow-hidden  rounded-full mr-10">
+                        <Image
+                          src={elemento.image}
+                          alt={`Foto de perfil de ${elemento.name}`}
+                          className="object-contain"
+                          fill
+                          sizes="100%"
+                        />
+                      </div>
 
-                  <CardContent className="flex items-center w-full">
-                    <div className="relative w-2/4 sm:w-2/3 md:w-2/3 h-24 aspect-square overflow-hidden rounded-full mr-10">
-                      <Image
-                        src={elemento.image}
-                        alt={`Foto de perfil de ${elemento.name}`}
-                        className="object-contain"
-                        fill
-                        sizes="100%"
-                      />
-                    </div>
+                      <div className="text-white text-left w-full">
+                        <h3 className="md:font-semibold sm:font-normal font-light text-xs sm:text-sm md:text-sm">
+                          {elemento.name}
+                        </h3>
+                        <p className="text-xs sm:text-xs md:text-sm pb-2">{elemento.work}</p>
+                        <Button className="w-2/3 sm:w-2/3 md:w-4/5 lg:w-1/2 lg:max-w-[200px] pb-2 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
+                          <p className="font-poppins text-[0.65rem] sm:text-xs md:text-sm">Descargar CV</p>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
 
-                    <div className="text-white text-left w-full">
-                      <h3 className="md:font-semibold sm:font-normal font-light text-xs sm:text-sm md:text-sm">
-                        {elemento.name}
-                      </h3>
-                      <p className="text-xs sm:text-xs md:text-sm pb-2">{elemento.work}</p>
-                      <Button className="w-2/3 sm:w-2/3 md:w-4/5 lg:w-1/2 lg:max-w-[200px] pb-2  border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
-                        <p className="font-poppins text-[0.65rem] sm:text-xs md:text-sm">Descargar CV</p>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-full h-[2px] w-5 opacity-50 bg-white z-0"></div>
+                </div>
               ))}
+
             </div>
           ))}
         </div>
