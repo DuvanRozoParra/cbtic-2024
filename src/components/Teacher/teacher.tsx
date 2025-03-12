@@ -141,7 +141,7 @@ export function TeacherAbout() {
                         {elemento.name}
                       </h3>
                       <p className="text-xs sm:text-xs md:text-sm pb-2">{elemento.work}</p>
-                      <Button className="w-2/3 sm:w-2/3 md:w-2/3 lg:w-1/2 lg:max-w-[200px] pb-2 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
+                      <Button className="w-2/3 sm:w-2/3 md:w-4/5 lg:w-1/2 lg:max-w-[200px] pb-2  border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
                         <p className="font-poppins text-[0.65rem] sm:text-xs md:text-sm">Descargar CV</p>
                       </Button>
                     </div>

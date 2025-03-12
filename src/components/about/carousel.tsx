@@ -52,12 +52,12 @@ export function CarouselAbout() {
 
       <div className="w-full flex justify-center items-center  flex-col gap-4 z-10 ">
         <div className="w-full relative text-white mt-10">
-          <div className="absolute inset-0 w-full h-full sm:h-full z-0">
+          <div className="absolute inset-0 w-full h-4/5 mt-2 sm:h-full z-0">
             <Image
               src={"/images/FondoAbout.webp"}
               alt="fondo unimeta"
               fill
-              className="md:object-top object-contain filter backdrop-blur-sm opacity-85 rounded-lg"
+              className=" sm:mb-0 md:object-top object-contain filter backdrop-blur-sm opacity-85 rounded-lg"
             />
           </div>
           <div className="relative z-10 flex flex-col sm:flex-row items-center sm:items-start justify-center">
@@ -99,16 +99,16 @@ export function CarouselAbout() {
         </section>
       </div>
       <div className="relative flex flex-col sm:flex-row gap-4">
-        <div className="w-full sm:w-1/2 relative ">
+        <div className="w-full sm:w-1/2 sm:h-full relative ">
           <Image
             src="/images/Mision_vision.webp"
             alt="Fondo Misión y Visión"
             width={500}
             height={500}
-            className="object-contain rounded-lg"
+            className="object-contain rounded-lg  "
           />
-          <div className="absolute inset-0 flex flex-col  bg-opacity-50 p-0 sm:p-2 ">
-            <div className="flex justify-center gap-4 space-x-5 sm:space-x-20 md:space-x-20 mr-20 mb-10 md:mb-4 ">
+          <div className="absolute inset-0 flex flex-col  bg-opacity-50 p-0 sm:px-2 ">
+            <div className="flex justify-center gap-6 space-x-5 sm:space-x-20 md:space-x-20 mr-20 mb-5 md:mb-4 ">
               <button
                 onClick={() => setActiveTab("mision")}
                 className={`text-xl font-bold ${activeTab === "mision"
@@ -129,7 +129,7 @@ export function CarouselAbout() {
               </button>
             </div>
             <div className="flex-grow flex items-center justify-center">
-              <div className="text-sm text-white text-center lg:text-base md:text-base sm:text-sm  px-2 mb-20">
+              <div className="text-sm text-white text-center  lg:text-base md:text-base sm:text-sm  px-2 mb-20">
                 {activeTab === "mision" && (
                   <p>
                     Coadyuvar al desarrollo de planes, programas y proyectos de formación, investigación, extensión,
@@ -153,7 +153,7 @@ export function CarouselAbout() {
           <Image
             src="/images/AboutImage.png"
             alt="Imagen adicional"
-            width={480}
+            width={500}
             height={500}
             className="object-cover rounded-lg"
           />
@@ -172,12 +172,12 @@ export function CarouselAbout() {
             >
               <CardContent className="relative text-white flex flex-col  ml-2 p-10 lg:p-7 md:p-10 sm:p-10 h-full">
                 <div className="flex flex-col lg:flex-row lg:items-center items-center md:items-start h-full">
-                  <div className="sm:w-1/4 md:w-2/4 lg:w-3/5 w-3/4 mr-28 text-start sm:mr-32 md:pl-15 lg:text-left lg:pl-5 lg:mr-5 z-10">
+                  <div className="sm:w-1/4 md:w-3/5 w-3/4 mr-28 text-start sm:mr-32 md:pl-15 lg:text-left lg:pl-5 lg:mr-5 z-10">
                     <h3 className="text-base sm:text-base md:text-lg font-semibold mb-4">{elemento.name}</h3>
                     <div className="space-y-2 text-sm">
                       <p className="font-semibold">Formación: {elemento.work}</p>
                       {elemento.estudios.map((estudio, i) => (
-                        <p key={i} className="break-words">Carrera: {estudio}</p>
+                        <p key={i} className="break-words pr-8 sm:pr-0">Carrera: {estudio}</p>
                       ))}
                     </div>
                     <div className="flex justify-start sm:justify-center md:justify-center gap-2 mt-6 mr-16">
@@ -252,7 +252,7 @@ export function CarouselAbout() {
             />
           </div>
 
-          <p className="w-full text-sm sm:text-base break-words">
+          <p className="w-full text-sm sm:text-base break-words pr-10">
             Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi imperdiet. Et nisl ac eu tempus hendrerit. Non donec ut aenean placerat pulvinar quis.
           </p>
 
@@ -286,7 +286,7 @@ export function CarouselAbout() {
             </a>
           </div>
         </div>
-        <div className="relative z-10 w-full sm:w-2/3 p-6 sm:p-10 bg-opacity-50">
+        <div className="relative z-10 w-full sm:w-2/3 p-10  bg-opacity-50">
           <div className="block sm:hidden pb-60">
             <details className="mb-4">
               <summary className="cursor-pointer text-lg font-bold">Navegacion</summary>
@@ -306,7 +306,7 @@ export function CarouselAbout() {
                 <p className="text-sm">Proyectos</p>
               </div>
             </details>
-            <details className="mb-4">
+            <details className="pb-20">
               <summary className="cursor-pointer text-lg font-bold">Contactos</summary>
               <div className="mt-2">
                 <p className="text-sm">Dirección: Calle 123 #45-67, Barrio Centro, Ciudad</p>
