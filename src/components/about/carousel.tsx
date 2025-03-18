@@ -31,7 +31,7 @@ export function CarouselAbout() {
     },
     {
       name: " JUAN DIEGO GUZMAN MASSO",
-      image: "/images/Guzman.png",
+      image: "/images/Guzman2.png",
       estudios: [
         "Ingenieria de sistemas",
       ],

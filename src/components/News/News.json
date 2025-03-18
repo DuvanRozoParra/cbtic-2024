@@ -1,0 +1,43 @@
+[
+    {
+      "TituloNoticia": " Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.",
+      "Autor": "María López",
+      "CargoAutor": "Corresponsal de Tecnología Avanzada",
+      "ImagenAutor": "",
+      "fecha": "2024-03-15",
+      "Resumen": "Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi imperdiet. Et nisl ac eu tempus hendrerit. ",
+      "Noticia": "Un equipo internacional de investigadores ha desarrollado un nuevo modelo de inteligencia artificial capaz de optimizar el consumo energético en tiempo real... [texto completo]",
+      "ImagenNoticia": "/images/testimages/imagentest4.png"
+    },
+    {
+      "TituloNoticia": "Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.",
+      "Autor": "Carlos Rodríguez",
+      "CargoAutor": "Editor de Innovación Espacial",
+      "ImagenAutor": "",
+      "fecha": "2024-03-14T15:45:00Z",
+      "Resumen": "Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi imperdiet. Et nisl ac eu tempus hendrerit. ",
+      "Noticia": "El proyecto espacial QComm ha marcado un hito histórico con el exitoso lanzamiento del satélite cuántico Jinlong-1... [detalles técnicos]",
+      "ImagenNoticia": "/images/testimages/imagentest5.png"
+    },
+    {
+      "TituloNoticia": " Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.",
+      "Autor": "Carlos Rodríguez",
+      "CargoAutor": "Editor de Innovación Espacial",
+      "ImagenAutor": "",
+      "fecha": "2024-03-14T15:45:00Z",
+      "Resumen": "Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi imperdiet. Et nisl ac eu tempus hendrerit. ",
+      "Noticia": "El proyecto espacial QComm ha marcado un hito histórico con el exitoso lanzamiento del satélite cuántico Jinlong-1... [detalles técnicos]",
+      "ImagenNoticia": "/images/testimages/imagentest6.png"
+    },
+    {
+      "TituloNoticia": " Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.",
+      "Autor": "Carlos Rodríguez",
+      "CargoAutor": "Editor de Innovación Espacial",
+      "ImagenAutor": "",
+      "fecha": "2024-03-14T15:45:00Z",
+      "Resumen": "Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi imperdiet. Et nisl ac eu tempus hendrerit. ",
+      "Noticia": "El proyecto espacial QComm ha marcado un hito histórico con el exitoso lanzamiento del satélite cuántico Jinlong-1... [detalles técnicos]",
+      "ImagenNoticia": "/images/testimages/imagentest7.png"
+    }
+    
+  ]

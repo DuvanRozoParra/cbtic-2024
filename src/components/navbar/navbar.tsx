@@ -24,59 +24,61 @@ export const Navbar = () => {
   const handleDesktopAsignaturasLeave = () => {
     asignaturasTimeout.current = setTimeout(() => {
       setDesktopAsignaturasOpen(false);
-    }, 50); 
+    }, 50);
   };
 
   return (
-    <section className="w-screen h-14 fixed top-0 z-50 flex items-center justify-center p-5 bg-[#090910] bg-opacity-0 backdrop-blur-sm text-white">
-      <div className="flex items-center justify-between w-full">
-        <div className="text-xl flex flex-row gap-2 font-bold">
-          <Atom className="h-6 w-6" /> CBTIC
-        </div>
+    <section className="w-screen h-14 fixed top-0 z-50 flex items-center justify-between p-5 bg-[#090910] bg-opacity-0 backdrop-blur-sm text-white">
+      {/* Contenedor del logo */}
+      <div className="flex items-center text-lg font-bold">
+        <Atom className="h-6 w-6 mr-2" /> CBTIC
+      </div>
 
-        <div className="sm:hidden">
-          <button onClick={toggleMenu} className="text-white">
-            {isOpen ? <X className="h-full w-full" /> : <Menu className="h-full w-full" />}
-          </button>
-        </div>
-        <div className="hidden sm:flex justify-center items-center w-full">
-          <NavigationMenu>
-            <NavigationMenuList className="flex space-x-6 items-center justify-center w-full">
-              <StandarButton path="Home" name="Home" />
-              <div
-                className="relative"
-                onMouseEnter={handleDesktopAsignaturasEnter}
-                onMouseLeave={handleDesktopAsignaturasLeave}
-              >
-                <button className="text-white flex items-center gap-1 focus:outline-none">
-                  Asignaturas
-                  <ChevronDown
-                    stroke="currentColor"
-                    className={`h-4 w-4 transition-transform duration-300 ${desktopAsignaturasOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
-                {desktopAsignaturasOpen && (
-                  <div className="absolute left-0 top-full mt-2 flex flex-col bg-[#090910] bg-opacity-60 backdrop-blur-md shadow-lg rounded-lg overflow-hidden divide-y divide-gray-700">
-                    <Link
-                      href="/asignatures/faraday/info"
-                      className="px-4 py-3 text-white transition-colors duration-300 hover:bg-[#07070f]"
-                    >
-                      Ley de Faraday
-                    </Link>
-                    <Link
-                      href="/asignatures/pendulum/info"
-                      className="px-4 py-3 text-white transition-colors duration-300 hover:bg-[#07070f]"
-                    >
-                      Péndulo
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <StandarButton path="Teacher" name="Profesores" />
-              <StandarButton path="about" name="Acerca de Nosotros" />
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
+      {/* Botón del menú desplegable (visible solo en sm y dispositivos más pequeños) */}
+      <div className="sm:hidden ml-auto">
+        <button onClick={toggleMenu} className="text-white">
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
+
+      <div className="hidden sm:flex items-center justify-start w-full ml-28">
+        <NavigationMenu>
+          <NavigationMenuList className="flex space-x-6 items-center justify-center w-full">
+            <StandarButton path="Home" name="Home" />
+            <div
+              className="relative"
+              onMouseEnter={handleDesktopAsignaturasEnter}
+              onMouseLeave={handleDesktopAsignaturasLeave}
+            >
+              <button className="text-white flex items-center gap-1 focus:outline-none">
+                Asignaturas
+                <ChevronDown
+                  stroke="currentColor"
+                  className={`h-4 w-4 transition-transform duration-300 ${desktopAsignaturasOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {desktopAsignaturasOpen && (
+                <div className="absolute left-0 top-full mt-2 flex flex-col bg-[#090910] bg-opacity-60 backdrop-blur-md shadow-lg rounded-lg overflow-hidden divide-y divide-gray-700">
+                  <Link
+                    href="/asignatures/faraday/info"
+                    className="px-4 py-3 text-white transition-colors duration-300 hover:bg-[#07070f]"
+                  >
+                    Ley de Faraday
+                  </Link>
+                  <Link
+                    href="/asignatures/pendulum/info"
+                    className="px-4 py-3 text-white transition-colors duration-300 hover:bg-[#07070f]"
+                  >
+                    Péndulo
+                  </Link>
+                </div>
+              )}
+            </div>
+            <StandarButton path="Teacher" name="Profesores" />
+            <StandarButton path="about" name="Acerca de Nosotros" />
+            <StandarButton path="News" name="Noticias" />
+          </NavigationMenuList>
+        </NavigationMenu>
       </div>
 
       {isOpen && (
@@ -112,6 +114,7 @@ export const Navbar = () => {
               </div>
               <StandarButton path="Teacher" name="Profesores" />
               <StandarButton path="about" name="Acerca de Nosotros" />
+              <StandarButton path="News" name="Noticias" />
             </NavigationMenuList>
           </NavigationMenu>
         </div>

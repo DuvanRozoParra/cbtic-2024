@@ -1,0 +1,1 @@
+export { NewsLanding } from "./page";

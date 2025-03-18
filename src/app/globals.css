@@ -65,8 +65,6 @@ body {
   height: 100%; 
   z-index: 0;
   pointer-events: none;
-  
-  /* Fija el fondo respecto a la ventana */
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
