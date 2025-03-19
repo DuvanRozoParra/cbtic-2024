@@ -1,1 +1,2 @@
-export { NewsLanding } from "./page";
+export { NewsLanding } from "./Newslanding";
+

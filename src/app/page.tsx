@@ -1,7 +1,10 @@
-import { CanvasModel } from "@/components/LandingPageOwl/CanvasModel/CanvasModel";
+
+import React, { Suspense, lazy } from "react";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import Image from "next/image";
+import { CanvasModel } from "@/components/LandingPageOwl/CanvasModel/CanvasModel";
+
 
 export const metadata: Metadata = {
   title: "Landing Page",
@@ -30,15 +33,16 @@ export default function Home() {
 
       <div className="absolute w-full top-10 h-[50vh] md:hidden z-0">
         <Image 
-            src={"/images/Fondo_Buho.png"} 
-            alt="Landing Page Background" 
-            width={800}
-            height={800}
-          />
+          src={"/images/Fondo_Buho.png"} 
+          alt="Landing Page Background" 
+          width={800}
+          height={800}
+        />
       </div>
-
       <div className="w-full h-[65vh]  top-10 md:h-screen md:ml-56 z-20 flex items-center pointer-events-none">
-        <CanvasModel />
+        <Suspense fallback={null}>
+          <CanvasModel />
+        </Suspense>
       </div>
     </section>
   );
