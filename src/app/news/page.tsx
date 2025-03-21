@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { NewsLanding } from "@/components/news";
+import { NewsLanding } from "@/components/News";
 
 export const metadata: Metadata = {
   title: "Noticias",
