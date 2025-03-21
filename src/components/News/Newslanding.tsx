@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 import noticias from "./News.json";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem} from "../ui/carousel";
 
 export const NewsLanding = () => {
   const noticiasAltas = noticias.filter(noticia => noticia.importancia === "alta");

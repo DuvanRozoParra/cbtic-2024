@@ -1,5 +1,5 @@
 
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import Image from "next/image";
