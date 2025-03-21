@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import noticias from "@/components/news/News.json";
+import noticias from "@/components/News/News.json";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
