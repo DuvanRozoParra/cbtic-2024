@@ -101,7 +101,7 @@ export function TeacherAbout() {
 
       <section className="w-full flex flex-col items-center justify-center gap-5 z-10">
         <div className="w-4/5 text-center mb-2">
-          <p className="text-lg text-center">
+          <p className="text-lg text-justify ">
             El equipo de docentes en Ciencias Básicas es el pilar fundamental de nuestra
             institución, comprometido con la formación integral de nuestros estudiantes.
             Con años de experiencia en sus respectivas áreas y un profundo amor por la
@@ -120,11 +120,16 @@ export function TeacherAbout() {
               {grupo.map((elemento, index) => (
                 <div key={index} className="relative">
                   <Card
-                    backgroundImage="/images/ContainerTeacher.png"
-                    className="border-gray-300 relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full max-w-xl object-contain z-20"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, 100% 0, 100% calc(100% - 38px), calc(120% - 38px) 100%, 0 100%, 0 40px, 40px 0)",
+                    }}
+                    className="relative transform transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 w-full max-w-xl object-contain z-20 bg-[#FC44420D] border-2 border-[#FC4442]"
                   >
-                    <CardContent className="flex items-center w-full ">
-                      <div className="relative w-2/4 sm:w-2/3 md:w-2/3 h-24 aspect-square overflow-hidden  rounded-full mr-10">
+                    <div className="absolute -top-4 -left-8 w-20 h-10 border-b-4 border-[#FC4442] transform -rotate-45" />
+
+                    <CardContent className="flex items-center w-full">
+                      <div className="relative w-1/3 sm:w-2/3 md:w-2/3 h-24 aspect-square overflow-hidden rounded-full ml-5">
                         <Image
                           src={elemento.image}
                           alt={`Foto de perfil de ${elemento.name}`}
@@ -133,13 +138,18 @@ export function TeacherAbout() {
                           sizes="100%"
                         />
                       </div>
-
-                      <div className="text-white text-left w-full">
+                      <div className="text-white text-left w-full ml-5 py-5">
                         <h3 className="md:font-semibold sm:font-normal font-light text-xs sm:text-sm md:text-sm">
                           {elemento.name}
                         </h3>
                         <p className="text-xs sm:text-xs md:text-sm pb-2">{elemento.work}</p>
-                        <Button className="w-2/3 sm:w-2/3 md:w-4/5 lg:w-1/2 lg:max-w-[200px] pb-2 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out py-1 sm:py-2">
+                        <Button
+                          className="w-3/4 sm:w-2/3 md:w-4/5 lg:w-1/2 lg:max-w-[200px] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-105 transition-transform duration-300 ease-in-out p-2"
+                          style={{
+                            borderImage: "linear-gradient(45deg, #FC4442, #F0E19E) 1",
+                            borderImageSlice: 1, 
+                          }}
+                        >
                           <p className="font-poppins text-[0.65rem] sm:text-xs md:text-sm">Descargar CV</p>
                         </Button>
                       </div>

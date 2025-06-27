@@ -21,26 +21,26 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
       return "translate-y-0 scale-100 opacity-100 z-10";
     }
     if (offset === 1) {
-      return "translate-y-[10%] scale-90 opacity-80 z-5";  // Mejora la visibilidad de la imagen detrás
+      return "translate-y-[10%] scale-90 opacity-80 z-5";
     }
     if (offset === images.length - 1) {
-      return "translate-y-[-10%] scale-90 opacity-80 z-5"; // Ajuste para la imagen anterior
+      return "translate-y-[-10%] scale-90 opacity-80 z-5";
     }
 
-    return "translate-y-full opacity-0 z-0"; // Asegura que las imágenes no visibles queden al fondo
+    return "translate-y-full opacity-0 z-0";
   };
 
   const getImageStyle = (index: number) => {
     const offset = (index - currentIndex + images.length) % images.length;
     if (offset === 0) return "";
-    return "filter blur-sm";  // Puedes ajustar el nivel de desenfoque si es necesario
+    return;
   };
 
   return (
     <div
-      className="w-full h-full overflow-hidden relative lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[60%] mx-auto"  // Ajuste de ancho para pantallas xl y 2xl
+      className="w-full h-full overflow-hidden relative lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[60%] mx-auto"
       style={{
-        perspective: "150px", // Incrementa el valor para dar más efecto 3D en pantallas grandes
+        perspective: "150px",
       }}
     >
       <div
@@ -63,8 +63,8 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
                   <Image
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    width={800}
-                    height={800}
+                    width={900}
+                    height={900}
                     className="w-full h-full object-contain"
                   />
                 </CardContent>
@@ -74,16 +74,28 @@ export const CarrouselImages: React.FC<CarrouselProps> = ({ images }) => {
         })}
       </div>
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-20 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <div
             key={index}
             onClick={() => goToImage(index)}
-            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full cursor-pointer  ${
-              index === currentIndex
-                ? "bg-[#FC4442]"
-                : "border-2 border-[#FC4442] bg-transparent hover:bg-[#FC4442]"
-            } transition-colors duration-300`}
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full cursor-pointer transition-colors duration-300 ${index === currentIndex
+                ? "bg-gradient-to-b from-[#F1D597] to-[#FC4442]" 
+                : "bg-transparent" 
+              }`}
+            style={
+              index !== currentIndex
+                ? {
+                  width: "16px",
+                  height: "16px",
+                  borderRadius: "50%", 
+                  border: "2px solid transparent", 
+                  background: "linear-gradient(black, black) padding-box, linear-gradient(45deg, #FC4442, #F0E19E) border-box",
+                  WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+                  maskImage: "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+                }
+                : {}
+            }
           />
         ))}
       </div>

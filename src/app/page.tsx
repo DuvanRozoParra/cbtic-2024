@@ -25,7 +25,13 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-6">
-          <Button className="p-7 border-[#FC4442] bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-95 transition-transform duration-300 ease-in-out">
+          <Button 
+            className="p-7  bg-transparent border-2 hover:bg-[#FC4442] transform hover:scale-95 transition-transform duration-300 ease-in-out"
+            style={{
+              borderImage: "linear-gradient(45deg, #FC4442, #F0E19E) 1",
+              borderImageSlice: 1, 
+            }}
+            >
             <p className="font-poppins text-lg">¡Comienza ahora!</p>
           </Button>
         </div>

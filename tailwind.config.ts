@@ -10,6 +10,20 @@ export default {
   ],
   theme: {
   	extend: {
+		keyframes: {
+			slideDown: {
+			  '0%': {  transform: 'translateY(-90%)' },
+			  '100%': {  transform: 'translateY(0)' },
+			},
+			slideUp: {
+			  '0%': {  transform: 'translateY(0)' },
+			  '100%': { transform: 'translateY(-90%)' },
+			},
+		  },
+		  animation: {
+			slideDown: 'slideDown 0.3s ease-out forwards',
+			slideUp: 'slideUp 0.3s ease-in forwards',
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
