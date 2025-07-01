@@ -1,5 +1,6 @@
 export { Navbar } from "./navbar";
-export { AboutUs } from "./itemsNavbar/AboutUs";
-export { Asignature } from "./itemsNavbar/Asignature";
-export { Home } from "./itemsNavbar/Home";
+export { AsignaturasDropdown } from "./itemsNavbar/AsignaturasDropdown";
+export { DesktopMenu } from "./itemsNavbar/DesktopMenu";
+export { Logo } from "./itemsNavbar/logo";
+export { MobileMenu } from "./itemsNavbar/MobileMenu";
 export { StandarButton } from "./itemsNavbar/StandarButton";
